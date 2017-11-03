@@ -3,12 +3,15 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
+import { BaiduMapModule } from 'angular2-baidu-map';
+
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    BaiduMapModule.forRoot({ak: 'gd0GyxGUxSCoAbmdyQBhyhrZ'})
   ],
   providers: [],
   bootstrap: [AppComponent]
