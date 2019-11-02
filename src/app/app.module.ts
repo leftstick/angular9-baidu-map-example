@@ -1,19 +1,17 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser'
+import { NgModule } from '@angular/core'
 
-import { AppComponent } from './app.component';
+import { AppComponent } from './app.component'
 
-import { BaiduMapModule } from 'angular2-baidu-map';
+import { BaiduMapModule } from 'angular2-baidu-map'
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
-    BaiduMapModule.forRoot({ak: 'gd0GyxGUxSCoAbmdyQBhyhrZ'})
+    BaiduMapModule.forRoot({ ak: 'gd0GyxGUxSCoAbmdyQBhyhrZ' })
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
